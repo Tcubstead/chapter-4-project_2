@@ -7,10 +7,21 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+//function that determines the cost of shipping per 500 miles based on weight
+double shippingRate(double weight) {
+	if (weight <= 2);
+			return 1.10;
+	} else if (weight <= 6) {
+		return 2.20;
+	} else if (weight <= 10) {
+		return 3.70;
+	} else if (weight <= 20) {
+		return 4.80;
+	} else {
+		return 0;
+	}
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
