@@ -1,7 +1,8 @@
 // Thomas Cubstead
 //10/31/24
 //chatper 4 Project
-//Main
+//2_Shipping_Charges
+//this program calculates the price of shipping for packages of verious weights per 500 miles shipped
 
 #include <iostream>
 using namespace std;
