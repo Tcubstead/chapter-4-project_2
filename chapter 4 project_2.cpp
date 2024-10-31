@@ -13,11 +13,11 @@ double circleAreaFormula(double radius) {
 	return PI * radius * radius;
 }
 
-double rectangleAreaFormula(double length, width) {
+double rectangleAreaFormula(double length, double width) {
 	return length * width;
 }
 
-double triangleAreaFormula(double base, height) {
+double triangleAreaFormula(double base, double height) {
 	return base * height * .5;
 }
 
@@ -70,9 +70,9 @@ int main() {
 			}
 			break;
 		case 4:
-			cout << "returning to satrt" << endl;
+			cout << "returning to start" << endl;
 			break;
 		}
-	} while (choice != 4)
+	} while (choice != 4);
 	return 0;
 }
