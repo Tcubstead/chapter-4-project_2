@@ -46,7 +46,7 @@ int main() {
 			if (radius < 0) {
 				cout << "invalid input. Radius can not be negative" << endl;
 			} else {
-				cout << "Area of the circle: " << circleAreaFormula(radius) << endl;
+				cout << "Area of the circle: " << circleAreaFormula(radius) << endl << endl;
 			}
 			break;
 
@@ -56,7 +56,7 @@ int main() {
 			if (length < 0 || width < 0) {
 				cout << "invalid input. inputs can not be negative" << endl;
 			} else {
-				cout << "Area of the rectangle: " << rectangleAreaFormula(length, width) << endl;
+				cout << "Area of the rectangle: " << rectangleAreaFormula(length, width) << endl << endl;
 			}
 			break;
 
@@ -67,11 +67,11 @@ int main() {
 				cout << "invalid input. base and height can not be negative" << endl;
 			}
 			else {
-				cout << "Area of the triangle: " << triangleAreaFormula(base, height) << endl;
+				cout << "Area of the triangle: " << triangleAreaFormula(base, height) << endl << endl;
 			}
 			break;
 		case 4:
-			cout << "returning to start" << endl;
+			cout << "returning to start" << endl << endl;
 			break;
 		}
 	} while (choice != 4);
