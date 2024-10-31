@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-// calculations for different geometric shape's areas
+// calculations for different geometric shape's areas and defintion of PI
 const double PI = 3.14159;
 double circleAreaFormula(double radius) {
 	return PI * radius * radius;
@@ -21,6 +21,7 @@ double triangleAreaFormula(double base, double height) {
 	return base * height * .5;
 }
 
+//user input and menu
 int main() {
 	int choice;
 	double radius, length, width, base, height;
