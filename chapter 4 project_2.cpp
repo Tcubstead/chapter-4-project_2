@@ -1,7 +1,8 @@
 // Thomas Cubstead
 //10/31/24
 //chatper 4 Project
-//Main
+//3_Geometry_Calculator
+//a simple calculator program to find the area of a circle, rectance, or triangle
 
 #include <iostream>
 using namespace std;
