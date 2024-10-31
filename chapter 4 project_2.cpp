@@ -8,7 +8,7 @@
 using namespace std;
 
 // calculations for different geometric shape's areas
-const double PI = 3.14159
+const double PI = 3.14159;
 double circleAreaFormula(double radius) {
 	return PI * radius * radius;
 }
@@ -38,6 +38,41 @@ int main() {
 			cout << "invalid choice. Please try again: " << endl;
 			continue;
 		}
+		switch (choice) {
+		case 1:
+			cout << "enter the radius of the circle: ";
+			cin >> radius;
+			if (radius < 0) {
+				cout << "invalid input. Radius can not be negative" << endl;
+			} else {
+				cout << "Area of the circle: " << circleAreaFormula(radius) << endl;
+			}
+			break;
 
-	}
+		case 2:
+			cout << "Enter the length and width of the rectangle: ";
+			cin >> length >> width;
+			if (length < 0 || width < 0) {
+				cout << "invalid input. inputs can not be negative" << endl;
+			} else {
+				cout << "Area of the rectangle: " << rectangleAreaFormula(length, width) << endl;
+			}
+			break;
+
+		case 3:
+			cout << "Enter the base and height of the triangle: ";
+			cin >> base >> height;
+			if (base < 0 || height < 0) {
+				cout << "invalid input. base and height can not be negative" << endl;
+			}
+			else {
+				cout << "Area of the triangle: " << triangleAreaFormula(base, height) << endl;
+			}
+			break;
+		case 4:
+			cout << "returning to satrt" << endl;
+			break;
+		}
+	} while (choice != 4)
+	return 0;
 }
