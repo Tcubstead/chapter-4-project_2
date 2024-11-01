@@ -18,7 +18,7 @@ double shippingRate(double weight) {
 	} else if (weight <= 20) {
 		return 4.80;
 	} else {
-		return 0;
+		return 0; 
 	}
 }
 
